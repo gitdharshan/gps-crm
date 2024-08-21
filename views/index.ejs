@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/public/">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  /* styles.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.container{
+  max-width: 600px;
+  margin: 20px auto;
+  position: relative;
+  left: 280px;
+  top: 500px;
+  width: 1600px;
+  
+}
+.container .content{
+  top: -500px;
+position: absolute;
+background-color: blue;
+width: 1300px;
+left: -530px;
+
+
+
+}
+
+
+/*.container .content{
+position: absolute;
+margin-top: -500px;
+background-color: #5095de;
+width: 100%;
+margin-left: -720px;
+height: 120px;
+
+
+ 
+} */
+
+
+
+
+
+
+
+
+
+.sidebar{
+  position: fixed;
+  left:0;
+  bottom:0;
+  width: 113px;
+  padding:0 1.7rem;
+  color: #fff;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  background: rgba(113,99,186,255);
+  height: 100vh;
+  border-radius: 10px
+}
+
+.sidebar:hover{
+ width: 200px;
+ transition: 0.5s;
+}
+.logo{
+ height: 80px;
+ padding: 30px;
+ padding-top: 120px;
+}
+.menu{
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+.menu li{
+  padding: 1rem;
+  margin: 8px 0;
+  transition: all 0.5s ease-in-out;
+}
+.menu li:hover,.active{
+  background: #e0e0e058;
+}
+.menu a{
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+}
+.menu a{
+  font-size: 0.8rem;
+}
+.logout{
+position: relative;
+top: 80px;
+
+}
+.vehicles{
+  position: absolute;
+  display: flex;
+  top: -280px;
+  gap: 50px;
+  left: -380px;
+
+  
+}
+
+.item{
+  flex: 0 0 200px;
+  text-align: center;
+  background-color: orange;
+  padding-top: 20px;
+  height: 50px;
+}
+.item-2{
+  flex: 0 0  200px;
+  background-color: blue;
+  padding-top: 20px;
+  padding-left: 20px;
+
+}
+.item-3{
+  flex: 0 0 200px;
+  background-color: green;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.item-4{
+  flex: 0  0 200px;
+  background-color: yellow;
+  padding-top: 20px;
+  padding-left: 20px;
+
+}
+.sub{
+  position: absolute;
+  font-size: 20px;
+  display: flex;
+  gap: 30px;
+ 
+ top: -190px;
+
+ 
+}
+
+
+
+
+.align{
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+ top: 300px;
+  margin-left: -240px;
+   width: 50%;
+
+  
+ 
+
+}
+
+.align h2{
+  position: relative;
+  top: 30px;
+}
+.topic{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+th,td{
+  padding: 8px;
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+
+h1 {
+  text-align: center;
+}
+
+
+.hello{
+  position: static;
+  top: 300px;
+}
+.add{
+ background-color: #f2f2f2;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ margin-bottom: 20px;
+ margin-left: -250px;
+
+}
+.add label{
+ font-weight: bold;
+ margin-bottom: 6px;
+ display: block;
+
+}
+.add label input[type="text"]
+.add label input[type="Age"]
+.add label input[type="email"]{
+  width: calc(100%, -12px);
+  padding: 20px;
+  margin-bottom: 15px;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.add button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .add button:hover {
+            background-color: #0056b3;
+        }
+        .post{
+          position: absolute;
+          top: 700px;
+          left: 700px;
+        }
+
+        .trans{
+          position: absolute;
+          top: 1400px;
+         left: 400px;
+        }
+        .trans .align-2{
+          position: relative;
+          left: -100px;
+        }
+
+        .trans .align-2 table{
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+ .trans .align-2 th,td{
+  padding: 8px;
+
+ }
+        
+</style>
+<body>
+  <div class="container">
+    <div class="content">
+    <h1>GPS CRM</h1>
+    <h2>Add vehicle</h2>
+  </div>
+
+
+  <div class="sidebar">
+    <div class="logo">
+
+ 
+    <ul class="menu">
+      <li class="active">
+        <a href="script.html">
+          <i class="fas fa-tachometer-alt">Dashboard</i>
+        
+        </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-tachometer-alt">Contacts</i>
+          
+          </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-tachometer-alt">AddVehicle</i>
+            
+            </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-tachometer-alt">GetUserDetails</i>
+              
+              </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-tachometer-alt">Invoices</i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-tachometer-alt">BulkExport/Import</i>
+                
+                </a>
+                </li>
+
+      
+             
+             
+    </ul>
+    <ul class="logout">
+      <li>
+        <a href="#">Logout</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+  <div class="vehicles">
+    <div class="item">Total Vehicles 25</div>
+    <div class="item-2">Vehicles Expiring This Month</div>
+    <div class="item-3">Vehicles Expiring in 7 Days</div>
+    <div class="item-4">Vehicles Expired</div>
+    </div>
+      
+    <div class="sub">
+      <p style="background-color: yellow;">Filter(DropDown)</p>
+      <p style="background-color: yellow">Recycle Bin</p>
+      <p style="background-color: yellow";>Download</p>
+      </div>
+     
+        <div class="align">
+          <table>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+             <th>Contact_no</th>
+             <th>Email</th>
+             <th>Company_name</th>
+             <th>Mobile_number</th>
+             <th>City</th>
+              <!-- Add more table headers for other columns -->
+            </tr>
+            <% users.forEach(user => { %>
+              <tr>
+                <td><%= user.ID%></td>
+                <td><%= user.User_name %></td>
+                 <td><%= user.Contact_no %></td>
+                 <td><%= user.Email %></td>
+                 <td><%= user.Company_name %></td>
+                 <td><%= user.Mobile_number%></td>
+                 <td><%= user.City%></td>
+                 <td>
+                  <form action="/deleteuser/<%= user.ID %>" method="POST">
+                    <button type="submit" style="color:red">Delete</button>
+                  </form>
+                </td>
+                <!-- Add more table data for other columns -->
+              </tr>
+            <% }); %>
+          </table>
+          
+          </div>
+      
+
+  </div>
+<div class="post">
+  <h2>Add Contacts</h2>
+  <form action="/adduser" method="POST" class="add">
+      <label for="User_name">UserName:</label>
+      <input type="User_name" id="User_name" name="User_name" required>
+      <label for="Contact_no">Contact_no:</label>
+      <input type="Contact_no" id="Contact_no" name="Contact_no" required>
+      <label for="Email">Email:</label>
+      <input type="email" id="Email" name="Email" required>
+      <label for="Company_name" id="Company_name" name="Company_name">Company Name:</label>
+      <input type="text" id="Company_name" name="Company_name">
+      <label for="Mobile_number" id="Mobile_number" name="Mobile_number">Mobile Number</label>
+      <input type="text" id="Mobile_number" name="Mobile_number">
+      <label for="City" id="City">City:</label>
+      <input type="text" id="City" name="City">
+      <button type="submit">Add User</button>
+
+  </form>
+</div>
+<div class="trans">
+  <h1>Add vehicle</h1>
+  <div class="align-2">
+ <table>
+  <tr>
+    <th>Vehicle No</th>
+    <th>Vehicle Type</th>
+    <th>Vehicle Name</th>
+    <th>Device Model</th>
+    <th>Device name</th>
+    <th>IMEI No</th>
+    <th>Sim No</th>
+    <th>Sim operator</th>
+    <th>Inst date</th>
+    <th>Exp date</th>
+  </tr>
+  <% users.forEach(user => { %>
+    <tr>
+      <td><%= user.ID%></td>
+      <td><%= user.User_name %></td>
+       <td><%= user.Contact_no %></td>
+       <td><%= user.Email %></td>
+       <td><%= user.Company_name %></td>
+       <td><%= user.Mobile_number%></td>
+       <td><%= user.City%></td>
+       <td>
+        <form action="/deleteuser/<%= user.ID %>" method="POST">
+          <button type="submit" style="color:red">Delete</button>
+        </form>
+      </td>
+      <!-- Add more table data for other columns -->
+    </tr>
+  <% }); %>
+  
+ </table>
+  </div>
+</div>
+ 
+     
+   
+</body>
+</html>
